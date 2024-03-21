@@ -1,0 +1,16 @@
+
+#*************************************************Inventories*********************************************
+ansible-inventory --help 
+
+ansible-inventory -i hosts --list
+
+ansible-inventory -i hosts --list -y
+
+
+
+
+#*************************************************Playbooks*********************************************
+ansible-galaxy collection list | grep ios
+sudo apt -y update
+sudo apt install software-properties-common
+add-apt-repository --yes --update ppa:ansible/ansible

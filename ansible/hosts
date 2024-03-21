@@ -1,0 +1,13 @@
+ungrouped.example.com
+[switches]
+NX1 ansible_host=192.168.1.201
+NX2 ansible_host=192.168.1.202
+MGMT_SW ansible_host=192.168.1.203
+[servers]
+blackhole.local ansible_host=192.168.1.200
+[prod:children]
+[preprod:children]
+[all:vars]
+ansible_connection=ssh
+ansible_user=capitain
+ansible_ssh_pass=MasterC@P

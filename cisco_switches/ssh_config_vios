@@ -1,0 +1,11 @@
+enable
+config terminal
+enable secret cisco
+username user1 privilege 15 password pass1
+aaa new-model
+ip domain name domain.local
+crypto key generate rsa modulus 2048
+line vty 0 14
+transport input ssh
+logging synch
+exit
